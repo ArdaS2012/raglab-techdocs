@@ -24,3 +24,7 @@ def chunk(path: str):
 def run():
     #TODO: implement run function
     console.print("running raglab placeholder")
+
+@app.command()
+def info():
+    console.print("raglab-techdocs: a RAG pipeline for technical documentation")
