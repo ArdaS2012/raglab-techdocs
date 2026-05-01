@@ -16,6 +16,11 @@ dependencies = [
 [project.scripts]
 raglab = "raglab_techdocs.cli:app"
 
+[project.optional-dependencies]
+dev = [
+    "pytest>=9.0.3",
+]
+
 [tool.setuptools]
 package-dir = {"" = "src"}
 
