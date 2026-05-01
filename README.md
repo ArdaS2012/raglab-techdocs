@@ -3,4 +3,4 @@
 This repository provides a benchmark for evaluating RAG strategies on PDFs using various models, chunking strategies and preprocessing.
 
 ## Roadmap
-After building the project structure step by step. It will be possible to use different strategies for chunking and retrieval. Afterwards the different strategies will be compared to each other so the user understands which strategy fits the best for the own use case. In the end there will be also an end to end pipeline available which can be used with an UI. The pipeline will consist of parts used during benchmark and will be an example usage of what is possible with RAG.
+The project structure will be built step by step. Once that foundation is in place, it will be possible to use different strategies for chunking and retrieval. These strategies will then be compared so that users can better understand which approach best fits their use case. Finally, an end-to-end pipeline with a UI will be available. This pipeline will consist of the components used during the benchmark and will serve as an example of what is possible with RAG.

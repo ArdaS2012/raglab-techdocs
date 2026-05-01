@@ -11,9 +11,9 @@ def ingest(path: str):
     console.print(f"ingesting data placeholder: {path}")
 
 @app.command()
-def query(query: str):
-    #TODO: implement query function
-    console.print(f"querying data placeholder: {query}")
+def question(query: str):
+    #TODO: implement question function
+    console.print(f"questioning data placeholder: {query}")
 
 @app.command()
 def chunk(path: str):

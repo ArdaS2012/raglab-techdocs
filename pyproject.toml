@@ -15,3 +15,10 @@ dependencies = [
 
 [project.scripts]
 raglab = "raglab_techdocs.cli:app"
+
+[tool.setuptools]
+package-dir = {"" = "src"}
+
+[tool.setuptools.packages.find]
+where = ["src"]
+include = ["raglab_techdocs*"]
