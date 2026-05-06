@@ -133,7 +133,8 @@ class TestNormalizeTextEndToEnd:
         f.write_text("This   IS a TEST.\nWith  newlines.")
         out_dir = tmp_path / "out"
         pu = PreprocessUtils(str(f), output_dir=str(out_dir))
-        out_path = pu.normalize_text()
+        pu.normalize_text()
+        out_path = pu.save_document()
         saved = open(out_path).read()
         assert saved == "this is a test. with newlines."
 
@@ -142,6 +143,7 @@ class TestNormalizeTextEndToEnd:
         f.write_text("## Header\n\nParagraph   text.")
         out_dir = tmp_path / "out"
         pu = PreprocessUtils(str(f), output_dir=str(out_dir))
-        out_path = pu.normalize_text()
+        pu.normalize_text()
+        out_path = pu.save_document()
         assert os.path.isfile(out_path)
         assert open(out_path).read() == "## header paragraph text."
