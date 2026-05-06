@@ -1,3 +1,8 @@
+#own cases
+*.env*
+notadded/
+
+
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[codz]
