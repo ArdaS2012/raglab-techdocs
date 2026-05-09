@@ -31,6 +31,13 @@ class PreprocessUtils:
             with open(output_path, "w", encoding="utf-8") as file:
                 file.write(self.loaded_document)
             return output_path
+        
+        def read_document(self) -> str:
+            """Read the document from the specified path and return its content as a string."""
+            if not self._is_supported_file():
+                raise ValueError("Unsupported file type. Only .md and .txt are supported.")
+            with open(self.path, "r", encoding="utf-8") as file:
+                return file.read()
 
         def normalize_text(self) -> str:
             """Load a .txt or .md file, normalize its content, and return the normalized string.
